@@ -18,3 +18,10 @@ output "ec2_id" {
   value = aws_instance.my_ec2.*.id
 }
 
+output "ec2_id_1" {
+  value = aws_instance.my_ec2[0].id
+}
+
+output "ec2_id_2" {
+  value = aws_instance.my_ec2[1].id
+}
